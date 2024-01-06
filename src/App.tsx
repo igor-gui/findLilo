@@ -35,17 +35,17 @@ function App() {
 
       <div className="text">
 
-      <p>Maior parte da pelagem é branca, com manchas marrons e cinza, olhos azuis e cerca de 4,5 kg. Muito dócil, um pouco assustada e não mia muito. Nos mudamos pra cá (Taquara) recentemente, então ela não conhece as ruas.
-      Fugiu pela janela na manhã do dia 31/12 assustada com a casa nova, na estrada do Cafundá, perto do salão de festas Mundo Colorido.</p>
-      <section className="data">
+        <p>Maior parte da pelagem é branca, com manchas marrons e cinza, olhos azuis e cerca de 4,5 kg. Muito dócil, um pouco assustada e não mia muito. Nos mudamos pra cá (Taquara) recentemente, então ela não conhece as ruas.
+          Fugiu pela janela na manhã do dia 31/12 assustada com a casa nova, na estrada do Cafundá, perto do salão de festas Mundo Colorido.</p>
+        <section className="data">
 
-      <strong>Nome</strong>: Lilo<br />
-      <strong>Idade</strong>: 10 anos<br />
-      <strong>CONTATOS</strong>: <br />
-      <strong> E-mail:</strong> guimaraes.igorrj@gmail.com <br />
-      <strong> Whats:</strong> (55) 99653-5533 ou (21) 97416-3622 <br />
-      <strong> Gratifica-se:</strong> R$ 50,00
-      </section>
+          <strong>Nome</strong>: Lilo<br />
+          <strong>Idade</strong>: 10 anos<br />
+          <strong>CONTATOS</strong>: <br />
+          <strong> E-mail:</strong> guimaraes.igorrj@gmail.com <br />
+          <strong> Whats:</strong> <a href="https://wa.link/baufp1" target='_blank'>(55) 99653-5533</a> ou <a href="https://wa.link/d1jns6" target='_blank'>(21) 97416-3622</a> <br />
+          <strong> Gratifica-se:</strong> R$ 50,00
+        </section>
       </div>
     </>
   );

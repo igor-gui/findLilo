@@ -30,6 +30,10 @@ p {
 b {
   font-weight: 600;
 }
+a {
+  text-decoration: none;
+}
 .imgLilo {
   max-width: 25%;
+  border-radius: 5px;
 }

@@ -4,6 +4,7 @@ import lilo1 from './assets/images/lilo1.jpg';
 import lilo2 from './assets/images/lilo2.jpg';
 import lilo3 from './assets/images/lilo3.jpg';
 import lilo4 from './assets/images/lilo4.jpg';
+import lilo5 from './assets/images/lilo5.jpg';
 
 function App() {
   // const [img Array, setImg Array] = useState<JSX.Element[]>([]);
@@ -29,6 +30,7 @@ function App() {
         <img className='imgLilo' src={lilo2} alt="" />
         <img className='imgLilo' src={lilo3} alt="" />
         <img className='imgLilo' src={lilo4} alt="" />
+        <img className='imgLilo' src={lilo5} alt="" />
       </div>
 
       <div className="text">

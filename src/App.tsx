@@ -1,27 +1,34 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import './App.css';
+import lilo1 from './assets/images/lilo1.jpg';
+import lilo2 from './assets/images/lilo2.jpg';
+import lilo3 from './assets/images/lilo3.jpg';
+import lilo4 from './assets/images/lilo4.jpg';
 
 function App() {
-  const [imgArray, setImgArray] = useState<JSX.Element[]>([]);
+  // const [img Array, setImg Array] = useState<JSX.Element[]>([]);
 
-  useEffect(() => {
-    const generateImages = () => {
-      const copy: JSX.Element[] = [];
-      for (let i = 1; i <= 4; i++) {
-        const catImage = <img key={i} className='imgLilo' src={`./src/assets/images/lilo${i}.jpg`} alt="Imagem da gatinha" />;
-        copy.push(catImage);
-      }
-      setImgArray(copy);
-    };
+  // useEffect(() => {
+  //   const generateImages = () => {
+  //     const copy: JSX.Element[] = [];
+  //     for (let i = 1; i <= 4; i++) {
+  //       const catImage = <img  key={i} className='img Lilo' src={`./src/assets/images/lilo${i}.jpg`} alt="Imagem da gatinha" />;
+  //       copy.push(catImage);
+  //     }
+  //     setImg Array(copy);
+  //   };
 
-    generateImages();
-  }, []);
+  //   generateImages();
+  // }, []);
 
   return (
     <>
       <h1>PROCURA-SE GATINHA MALHADA</h1>
       <div>
-        {imgArray}
+        <img className='imgLilo' src={lilo1} alt="" />
+        <img className='imgLilo' src={lilo2} alt="" />
+        <img className='imgLilo' src={lilo3} alt="" />
+        <img className='imgLilo' src={lilo4} alt="" />
       </div>
 
       <div className="text">

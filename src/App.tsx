@@ -5,32 +5,22 @@ import lilo2 from './assets/images/lilo2.jpg';
 import lilo3 from './assets/images/lilo3.jpg';
 import lilo4 from './assets/images/lilo4.jpg';
 import lilo5 from './assets/images/lilo5.jpg';
+import { WebSiteQRCode } from './components/QRCode';
 
 function App() {
-  // const [img Array, setImg Array] = useState<JSX.Element[]>([]);
 
-  // useEffect(() => {
-  //   const generateImages = () => {
-  //     const copy: JSX.Element[] = [];
-  //     for (let i = 1; i <= 4; i++) {
-  //       const catImage = <img  key={i} className='img Lilo' src={`./src/assets/images/lilo${i}.jpg`} alt="Imagem da gatinha" />;
-  //       copy.push(catImage);
-  //     }
-  //     setImg Array(copy);
-  //   };
-
-  //   generateImages();
-  // }, []);
 
   return (
     <>
       <h1>PROCURA-SE GATINHA MALHADA</h1>
-      <div>
-        <img className='imgLilo' src={lilo1} alt="" />
-        <img className='imgLilo' src={lilo2} alt="" />
-        <img className='imgLilo' src={lilo3} alt="" />
-        <img className='imgLilo' src={lilo4} alt="" />
-        <img className='imgLilo' src={lilo5} alt="" />
+      <div className='imgBlock'>
+        <section className="imgContainer">
+          <img onClick={(e) => alert(e.currentTarget.src)} className='imgLilo' src={lilo1} alt="Gatinha com olhos azuis, mancha" />
+          <img onClick={(e) => alert(e.currentTarget.src)} className='imgLilo' src={lilo2} alt="Gatinha com olhos azuis, mancha" />
+          <img onClick={(e) => alert(e.currentTarget.src)} className='imgLilo' src={lilo3} alt="Gatinha com olhos azuis, mancha" />
+          <img onClick={(e) => alert(e.currentTarget.src)} className='imgLilo' src={lilo4} alt="Gatinha com olhos azuis, mancha" />
+          <img onClick={(e) => alert(e.currentTarget.src)} className='imgLilo' src={lilo5} alt="Gatinha com olhos azuis, mancha" />
+        </section>
       </div>
 
       <div className="text">
@@ -47,6 +37,12 @@ function App() {
           <strong> Gratifica-se:</strong> R$ 50,00
         </section>
       </div>
+
+      {/* <section className='QRCodeGroup'>
+        <WebSiteQRCode link='https://find-lilo.vercel.app/' text='Site com Informações' />
+        <WebSiteQRCode link='https://wa.link/baufp1' text='WPP, Igor' />
+        <WebSiteQRCode link='https://wa.link/d1jns6' text='WPP, Ian' />
+      </section> */}
     </>
   );
 }

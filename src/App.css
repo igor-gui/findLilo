@@ -1,4 +1,5 @@
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -8,32 +9,58 @@
   align-items: center;
   text-align: center;
 }
-div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 90%;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-}
+
 p {
   text-align: justify;
   align-items: center;
   max-width: 600px;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-}
 b {
   font-weight: 600;
 }
 a {
   text-decoration: none;
 }
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* overflow: hidden; */
+  /* background-image: linear-gradient(to right, #242424, transparent, #242424); */
+  gap: 9px;
+}
 .imgLilo {
-  max-width: 25%;
+  width: 20%;
   border-radius: 5px;
+  z-index: -1;
+};
+
+.imgBlock {
+  z-index: 1;
+  width: 80%;
+  position: relative;
+};
+.QRCodeGroup {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.qrcode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+@media(max-width: 890px) { 
+
 }
